@@ -1,0 +1,33 @@
+/*
+ * Responsive Styles
+ * --------------------------------------------------
+ */
+ 
+@media screen and (max-width: 768px) {
+
+    .base, .mapElement {
+		background-position: top center;
+	}
+    
+    .full {
+        padding-top: 20px;
+    }
+
+    .navbar-brown {
+        background-color: $brown;
+        top: 0;
+        width: 100%;
+        position: relative;
+    }
+
+    #sidebar, #sidebar a, #sidebar-footer a {
+        padding-left: 3px;
+    }
+/* radio checkbox */
+	.radio label, .checkbox label {
+		padding: 2px;
+		font-size: 13px;
+	}
+    
+  
+}

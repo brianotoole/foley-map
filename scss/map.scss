@@ -1,0 +1,24 @@
+/* 
+Stylesheet Name: map.scss
+Description: Foley layered map
+Author: SMG
+*/
+
+/* variables
+-------------------------------------------------------------- */
+//brand colors
+$brown: #D8C594;
+$black: #333;
+
+//fonts
+$font-body: Helvetica,Arial;
+$font-heading: Helvetica,Arial; 
+
+/* imports
+-------------------------------------------------------------- */
+// Vendors
+@import "bootstrap"; //v3.0.1
+// Layout
+@import "layout"; 
+// Responsive
+@import "responsive"; 

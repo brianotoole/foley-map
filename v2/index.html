@@ -1,0 +1,203 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
+        <meta charset="utf-8">
+        <title>Foley Timber &amp; Land Co. - Our Land, An Overview Map</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link rel="stylesheet" href="css/map.css">
+        
+        <!--[if lt IE 9]>
+          <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+    </head>
+    
+    <body  class="map">
+        
+    <div class="wrapper">
+      <div class="box">
+        <div class="row">
+                      
+          
+            <!-- sidebar -->
+            <div class="column col-sm-3 col-xs-3 sidebar-offcanvas" id="sidebar">
+               
+                <ul class="nav" id="lg-menu">
+
+                  <div class="checkbox">
+                    <div class="toolbox">
+	                   <a href="#HowToUse" role="button" data-toggle="modal">How to Use</a>
+                    </div><!-- /.toolbox -->
+                  
+                    <label>
+					    <input class="two" id="blankCheckbox" type="checkbox" value="option1" aria-label=""> <span>Public Land</span>
+				    </label>
+                    <label>
+					    <input class="three" id="blankCheckbox" type="checkbox" value="option1" aria-label=""> <span>Land Ownership
+				    </label>
+                    <label>
+					    <input class="four" id="blankCheckbox" type="checkbox" value="option1" aria-label=""> <span>Agriculture</span>
+				    </label>
+                    <label>
+					    <input class="five" id="blankCheckbox" type="checkbox" value="option1" aria-label=""> <span>Airports</span>
+				    </label>
+                    <label>
+					    <input class="six" id="blankCheckbox" type="checkbox" value="option1" aria-label=""> <span>Future Land</span>
+				    </label>
+                    <label>
+					    <input class="seven" id="blankCheckbox" type="checkbox" value="option1" aria-label=""> <span>Water</span>
+				    </label>
+                    <label>
+					    <input class="eight" id="blankCheckbox" type="checkbox" value="option1" aria-label=""> <span>Gas</span>
+				    </label>
+                    <label>
+					    <input class="nine" id="blankCheckbox" type="checkbox" value="option1" aria-label=""> <span>Roads</span>
+				    </label>
+                    <label>
+					    <input class="ten" id="blankCheckbox" type="checkbox" value="option1" aria-label=""> <span>Power Lines</span>
+				    </label>
+                    <label>
+					    <input class="eleven" id="blankCheckbox" type="checkbox" value="option1" aria-label=""> <span>Coastal Road</span>
+				    </label>
+                    <label>
+					    <input class="twelve" id="blankCheckbox" type="checkbox" value="option1" aria-label=""> <span>Railroads</span>
+				    </label>
+                    <label>
+					    <input class="thirteen" id="blankCheckbox" type="checkbox" value="option1" aria-label=""> <span>Cities</span>
+				    </label> 
+                    <label>
+					    <input class="fourteen" id="blankCheckbox" type="checkbox" value="option1" aria-label=""> <span>Counties</span>
+				    </label>
+                  </div><!-- /.checkbox -->
+                                      
+                </ul>
+             
+              
+            </div> <!-- /sidebar -->
+          
+            <!-- main right col -->
+            <div class="column col-sm-9 col-xs-9" id="main">
+               
+                <div class="base row"> <!--id="magnify">-->
+	                <div class="layout col-md-12 col-sm-12 no-padding">
+	                	<div id="map1" class="mapElement"></div>
+	                	<div id="map2" class="mapElement"></div>
+	                	<div id="map3" class="mapElement"></div>
+	                	<div id="map4" class="mapElement"></div>
+	                	<div id="map5" class="mapElement"></div>
+	                	<div id="map6" class="mapElement"></div>
+	                	<div id="map7" class="mapElement"></div>
+	                	<div id="map8" class="mapElement"></div>
+	                	<div id="map9" class="mapElement"></div>
+	                	<div id="map10" class="mapElement"></div>
+	                	<div id="map11" class="mapElement"></div>
+	                	<div id="map12" class="mapElement"></div>
+	                	<div id="map13" class="mapElement"></div>
+	                	<div id="map14" class="mapElement"></div>
+	                </div><!-- /.layout -->
+                </div><!-- /.base -->
+            </div><!-- /main -->
+          
+        </div>
+    </div>
+</div>
+
+
+	<!--post modal-->
+	<div id="HowToUse" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+	  <div class="modal-dialog">
+	  <div class="modal-content">
+	      <div class="modal-header">
+	          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+				How to Use
+	      </div>
+	      <div class="modal-body">
+	          <form class="form center-block">
+	            <div class="form-group pad">
+		            <p>To view elements on our land, click on a checkbox to the left hand side. To remove the element, uncheck it.</p> 
+	            </div>
+	          </form>
+	      </div>
+	      <div class="modal-footer">
+	          <div>
+	          <button class="btn btn-primary btn-sm" data-dismiss="modal" aria-hidden="true">Close</button>
+			  </div>	
+	      </div>
+	  </div>
+	  </div>
+	</div>
+        
+        <script type='text/javascript' src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script type='text/javascript' src="//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+     
+        
+      
+        
+        <script type='text/javascript'>
+        $(document).ready(function() {
+		
+		/* map layers */
+		$(".two").click(function() {
+		    $("#map2").toggleClass("map2");
+		});
+		$(".three").click(function() {
+		    $("#map3").toggleClass("map3");
+		});
+		$(".four").click(function() {
+		    $("#map4").toggleClass("map4");
+		});
+		$(".five").click(function() {
+		    $("#map5").toggleClass("map5");
+		});
+		$(".six").click(function() {
+		    $("#map6").toggleClass("map6");
+		});
+		$(".seven").click(function() {
+		    $("#map7").toggleClass("map7");
+		});
+		$(".eight").click(function() {
+		    $("#map8").toggleClass("map8");
+		});
+		$(".nine").click(function() {
+		    $("#map9").toggleClass("map9");
+		});
+		$(".ten").click(function() {
+		    $("#map10").toggleClass("map10");
+		});
+		$(".eleven").click(function() {
+		    $("#map11").toggleClass("map11");
+		});
+		$(".twelve").click(function() {
+		    $("#map12").toggleClass("map12");
+		});
+		$(".thirteen").click(function() {
+		    $("#map13").toggleClass("map13");
+		});
+		$(".fourteen").click(function() {
+		    $("#map14").toggleClass("map14");
+		});
+		
+		/*$("#magnify").click(function () {
+	        $(this).toggleClass("zoom out");
+	        if ( $( "#magnify" ).hasClass( "zoom" ) ) {
+		    	$( "#sidebar" ).css( "display", "none" );
+		    	$( ".mapElement" ).toggleClass("full"); 
+			}
+			else {
+				$( "#sidebar" ).css( "display", "block" );
+			} 
+	    });*/
+	   	   
+
+		
+		        
+        });
+        </script>
+           
+
+        
+        
+    </body>
+</html>
